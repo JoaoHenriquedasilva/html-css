@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo class
+        :: = pseudo elemento
+        > = clildren (filho)
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(0, 139, 12);
+        }
+        a:hover{
+            color: aqua;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        p:active{
+            color: blue;
+        }
+        a::before{
+            content: '→';
+            font-weight: normal;
+            color: blue;
+            text-decoration: none;
+        }
+        a::after{
+            content: '←';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li>
+            <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório do github</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">Canal do youtube</a>
+        </li>
+        <li>
+            <a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Site do curso em video</a>
+        </li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias fugit vero doloribus autem earum error dolorem iste porro facilis. Sapiente aliquid quae sint reprehenderit. Totam architecto ipsa sed quaerat?</p>
+</body>
+</html>
